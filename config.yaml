@@ -1,0 +1,251 @@
+mnist_cu_iid:
+  lr: 0.01
+  momentum: 0.9
+  milestones: [100]
+  gamma: 0.1
+  batch_size: 128
+  global_epochs: 100
+  local_epochs: 1
+  num_clients: 10
+  eraser_idx: [0]
+
+  dataset: "mnist"
+  num_classes: 10
+  network: CNN
+
+  backdoor_rate: 0.2
+  target_label: 9
+
+  scenario: "iid"
+  dirichlet: 0.5
+
+mnist_cu_noniid:
+  lr: 0.01
+  momentum: 0.9
+  milestones: [100]
+  gamma: 0.1
+  batch_size: 128
+  global_epochs: 100
+  local_epochs: 1
+  num_clients: 10
+  eraser_idx: [0]
+
+  dataset: "mnist"
+  num_classes: 10
+  network: CNN
+
+  backdoor_rate: 0.2
+  target_label: 9
+
+  scenario: "non_iid"
+  dirichlet: 0.5
+
+mnist_su_iid:
+  lr: 0.01
+  momentum: 0.9
+  milestones: [100]
+  gamma: 0.1
+  batch_size: 128
+  global_epochs: 100
+  local_epochs: 1
+  num_clients: 10
+  eraser_idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+  dataset: "mnist"
+  num_classes: 10
+  network: CNN
+
+  backdoor_rate: 0.05
+  target_label: 9
+
+  scenario: "iid"
+  dirichlet: 0.5
+
+mnist_su_noniid:
+  lr: 0.01
+  momentum: 0.9
+  milestones: [100]
+  gamma: 0.1
+  batch_size: 128
+  global_epochs: 100
+  local_epochs: 1
+  num_clients: 10
+  eraser_idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+  dataset: "mnist"
+  num_classes: 10
+  network: CNN
+
+  backdoor_rate: 0.05
+  target_label: 9
+
+  scenario: "non_iid"
+  dirichlet: 0.5
+
+cifar10_cu_iid:
+  lr: 0.01
+  momentum: 0.9
+  milestones: [100]
+  gamma: 0.1
+  batch_size: 128
+  global_epochs: 100
+  local_epochs: 1
+  num_clients: 10
+  eraser_idx: [0]
+
+  dataset: "cifar-10"
+  num_classes: 10
+  network: ResNet18
+
+  backdoor_rate: 0.2
+  target_label: 9
+
+  scenario: "iid"
+  dirichlet: 0.5
+
+cifar10_cu_noniid:
+  lr: 0.01
+  momentum: 0.9
+  milestones: [100]
+  gamma: 0.1
+  batch_size: 128
+  global_epochs: 100
+  local_epochs: 1
+  num_clients: 10
+  eraser_idx: [0]
+
+  dataset: "cifar-10"
+  num_classes: 10
+  network: ResNet18
+
+  backdoor_rate: 0.2
+  target_label: 9
+
+  scenario: "non_iid"
+  dirichlet: 0.5
+
+cifar10_su_iid:
+  lr: 0.01
+  momentum: 0.9
+  milestones: [100]
+  gamma: 0.1
+  batch_size: 128
+  global_epochs: 100
+  local_epochs: 1
+  num_clients: 10
+  eraser_idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+  dataset: "cifar-10"
+  num_classes: 10
+  network: ResNet18
+
+  backdoor_rate: 0.050
+  target_label: 9
+
+  scenario: "iid"
+  dirichlet: 0.5
+
+cifar10_su_noniid:
+  lr: 0.01
+  momentum: 0.9
+  milestones: [100]
+  gamma: 0.1
+  batch_size: 128
+  global_epochs: 100
+  local_epochs: 1
+  num_clients: 10
+  eraser_idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+  dataset: "cifar-10"
+  num_classes: 10
+  network: ResNet18
+
+  backdoor_rate: 0.05
+  target_label: 9
+
+  scenario: "non_iid"
+  dirichlet: 0.5
+
+cifar100_cu_iid:
+  lr: 0.1
+  momentum: 0.9
+  milestones: [60, 120, 160]
+  gamma: 0.2
+  batch_size: 128
+  global_epochs: 200
+  local_epochs: 1
+  num_clients: 10
+  eraser_idx: [0]
+
+  dataset: "cifar-100"
+  num_classes: 100
+  network: ResNet34
+
+  backdoor_rate: 0.2
+  target_label: 9
+
+  scenario: "iid"
+  dirichlet: 0.5
+
+cifar100_cu_noniid:
+  lr: 0.1
+  momentum: 0.9
+  milestones: [60, 120, 160]
+  gamma: 0.2
+  batch_size: 128
+  global_epochs: 200
+  local_epochs: 1
+  num_clients: 10
+  eraser_idx: [0]
+
+  dataset: "cifar-100"
+  num_classes: 100
+  network: ResNet34
+
+  backdoor_rate: 0.2
+  target_label: 9
+
+  scenario: "non_iid"
+  dirichlet: 0.5
+
+cifar100_su_iid:
+  lr: 0.01
+  momentum: 0.9
+  milestones: [60, 120, 160]
+  gamma: 0.2
+  batch_size: 128
+  global_epochs: 200
+  local_epochs: 1
+  num_clients: 10
+  eraser_idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+  dataset: "cifar-100"
+  num_classes: 100
+  network: ResNet34
+
+  backdoor_rate: 0.5
+  target_label: 9
+
+  scenario: "iid"
+  dirichlet: 0.5
+
+cifar100_su_noniid:
+  lr: 0.01
+  momentum: 0.9
+  milestones: [60, 120, 160]
+  gamma: 0.2
+  batch_size: 128
+  global_epochs: 200
+  local_epochs: 1
+  num_clients: 10
+  eraser_idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+  dataset: "cifar-100"
+  num_classes: 100
+  network: ResNet34
+
+  backdoor_rate: 0.05
+  target_label: 9
+
+  scenario: "non_iid"
+  dirichlet: 0.5
