@@ -37,7 +37,7 @@ FedUOSC/
     for example: 
 
     ```
-    python code/main.py --config config/cifar10.yaml --key cu_iid
+    python code/main.py --config config/cifar10.yaml --setting cu_iid
     ```
 
 ## Notes
