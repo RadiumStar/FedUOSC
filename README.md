@@ -30,9 +30,15 @@ FedUOSC/
 1. Configuration File: prepare a `.yaml` configuration file before running the program or you can use the default file in `./config`, where `cu` means client removal and `su` means sample removal in federated system. 
 2. Run the Program: execute the following command to start the program:
 
-```
-python main.py --config <path_to_config_file> --setting <configuration_name>
-```
+    ```
+    python code/main.py --config <path_to_config_file> --setting <configuration_name>
+    ```
+
+    for example: 
+
+    ```
+    python code/main.py --config config/cifar10.yaml --key cu_iid
+    ```
 
 ## Notes
 - Datasets will be automatically downloaded to the specified path (change your dataset path in `./code/utils.py`).
