@@ -1,0 +1,83 @@
+cu_iid:
+  lr: 0.01
+  momentum: 0.9 
+  milestones: [100]
+  gamma: 0.1
+  batch_size: 128 
+  global_epochs: 100
+  local_epochs: 1
+  num_clients: 10
+  eraser_idx: [0]
+
+  dataset: "cifar-10"
+  num_classes: 10
+  network: ResNet18
+
+  backdoor_rate: 0.2 
+  target_label: 9
+
+  scenario: "iid"
+  dirichlet: 0.5
+
+cu_noniid:
+  lr: 0.01
+  momentum: 0.9 
+  milestones: [100]
+  gamma: 0.1
+  batch_size: 128 
+  global_epochs: 100
+  local_epochs: 1
+  num_clients: 10
+  eraser_idx: [0]
+
+  dataset: "cifar-10"
+  num_classes: 10
+  network: ResNet18
+
+  backdoor_rate: 0.2 
+  target_label: 9
+
+  scenario: "non_iid"
+  dirichlet: 0.5
+
+su_iid:
+  lr: 0.01
+  momentum: 0.9 
+  milestones: [100]
+  gamma: 0.1
+  batch_size: 128 
+  global_epochs: 100
+  local_epochs: 1
+  num_clients: 10
+  eraser_idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+  dataset: "cifar-10"
+  num_classes: 10
+  network: ResNet18
+
+  backdoor_rate: 0.05
+  target_label: 9
+
+  scenario: "iid"
+  dirichlet: 0.5
+
+su_noniid:
+  lr: 0.01
+  momentum: 0.9 
+  milestones: [100]
+  gamma: 0.1
+  batch_size: 128 
+  global_epochs: 100
+  local_epochs: 1
+  num_clients: 10
+  eraser_idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+  dataset: "cifar-10"
+  num_classes: 10
+  network: ResNet18
+
+  backdoor_rate: 0.05
+  target_label: 9
+
+  scenario: "non_iid"
+  dirichlet: 0.5
