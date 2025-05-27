@@ -1,6 +1,6 @@
 # Federated Unlearning with Oriented Saliency Compression
 
-🔗 paper link:  
+🔗 paper link: *Federated Unlearning with Oriented Saliency Compression* (accepted by IJCNN 2025, unpublished)
 
 ---
 
