@@ -1,6 +1,6 @@
 # Federated Unlearning with Oriented Saliency Compression
 
-🔗 paper link: [*Federated Unlearning with Oriented Saliency Compression*](https://ieeexplore.ieee.org/document/11228643/)
+🔗 paper link: [*Federated Unlearning with Oriented Saliency Compression(IJCNN 2025)*](https://ieeexplore.ieee.org/document/11228643/)
 
 ---
 
@@ -43,4 +43,5 @@ FedUOSC/
 ## Notes
 - Datasets will be automatically downloaded to the specified path (change your dataset path in `./code/utils.py`).
 - Adjust the parameters in the configuration file as needed.
+
 
